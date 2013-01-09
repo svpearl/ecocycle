@@ -1,0 +1,499 @@
+/* ************************************************************************************************** */
+
+/* CSS for product page */
+
+.body {
+	margin:0;
+	padding:0;
+}
+
+hr {
+width:1200px;
+}
+#right hr {
+width:100%;
+}
+
+#products {
+	margin:0 auto;
+	margin-top:2px;
+	width:1200px;
+	border:solid 1px #000;
+	background:url("../images/bgquiz.png");
+	background-repeat:repeat-x;
+	background-color:#DAFF7F;
+	overflow:hidden;
+	font-family:"lucida grande",Verdana, Arial, Helvetica, sans-serif;
+}
+
+div#ptitle {
+	border-bottom: 0px;
+	margin: 0 auto;
+	height:110px;
+	text-align:center;
+}
+
+div#ptitle h3 {
+	font-size: 24pt;
+	color: #228B22;
+    font-weight: normal;
+    margin: 10px;
+    padding:0px;
+	text-align:center;
+}
+div#ptitle p {
+	font-size:10pt;
+	color:#000000;
+}
+
+
+#categories {
+	height:30px;
+	background:url("../images/products_heading2.png");
+	background-repeat:no-repeat;
+	width:244px;
+	text-align:center;
+	vertical-align:bottom;
+	font-weight:bold;
+	color:#7F3300;
+}	
+
+div#container {
+	/* no padding for the container */
+	position:relative;
+	border:1px;
+	/* auto left and right margin makes the div centered */
+	margin-right:auto;
+	margin-left:auto;
+	
+}
+div#left {
+	width:20%;
+    float:left;
+    margin:30px 20px 0px 10px;
+    font-size:1em;
+	border-width: 0px;
+	border-style: solid;
+	border-color: green;
+}
+
+div#right {
+	top:0;
+	right:0;
+	/* bottom:0; */
+ 	width:77%;
+	/* No need to float this */
+	padding-top: 10px;
+    float:right;
+}
+
+div.image {
+  margin: 10px;
+  border: 1px solid #7F3300;
+  border-radius:15px;
+  height: auto;
+  width: auto;
+  float: left;
+  text-align: center;
+}	
+div.image img {
+  display: inline;
+  margin: 3px;
+  border-radius:15px;
+  border: 1px solid #ffffff;
+}
+div.image a:hover img {
+	border: 1px solid #7F3300;
+}
+
+div.desc {
+  text-align: center;
+  font-weight: normal;
+  width: 120px;
+  margin: 2px;
+}
+
+#left ul {
+	padding:0;
+	display:block;
+	margin:0;
+	width:100%;
+	border:solid 1px #CE8E67;
+	list-style-type:none;
+	text-align:center;
+}
+#left li {
+	background-color:#FFFFFF;
+	border-bottom:solid 1px #CE8E67;
+	cursor:pointer;
+	height:38px;
+	display:block;
+	padding-top:10px;
+}
+#left li.selected{
+	background-color:#FFBE96;
+}
+
+#left li:hover {
+	background-color:#FFDBC4;
+}
+
+#left a {
+	color :#404040;
+	text-decoration:none;
+	font-weight:bold;
+	display:block;
+	width:100%;
+	padding:0;
+}
+
+div#cleardiv {
+	clear:both;
+}
+
+/* ****************************************************************************************************** */
+/* CSS for Product details page here */
+
+
+div#cattitle h2 {
+	font-size:15pt;
+	color:green;
+
+}
+div#cattitle {
+	border-bottom: 0px;
+	margin: 0 auto;
+	height:30px;
+	text-align:center;
+}
+
+div.proddetails {
+  margin: 5px;
+  border: 1px solid #7F3300;
+  border-radius:15px;
+  height: auto;
+  width: 95%;
+  float: left;
+  text-align: center;
+}
+
+div.proddetails img {
+  display: inline;
+  float:left;
+  left:0;
+  margin: 3px;
+  border-radius:15px;
+  border: 1px solid #ffffff;
+}
+
+div.proddetails a:hover img {
+	border: 1px solid #7F3300;
+}
+
+div.prodtext {
+	float:left;
+	width:55%;
+	padding-left:20px;	
+}
+
+div.prodtext h3 {
+	font-size:12pt;
+	color:#228B22;
+	padding-top:0px;
+	text-align:center;
+	font-style:italic;
+}
+
+div.prodtext p {
+	font-size:10pt;
+	color:#000000;
+}
+
+/* More specific style for the price */
+div.prodtext p.price {
+	color:green;
+}
+
+div.formdiv p {
+	color:green;
+	font-size:10pt;
+}
+div.formdiv {
+	padding:30px 30px 0px 0px;
+	float:right;
+}
+
+div.formdiv option {
+	width:30px;
+	height:20px;
+	font-size:12pt;
+}
+
+div.formdiv input {
+	width:122px;
+	height:37px;
+	font-size:12pt;
+	background:url("../images/addtocart-green1.png");
+	background-repeat:no-repeat;
+}
+
+.overlay{
+	background-color:black; /*#adff2f; */
+	opacity:0.6;
+	filter:alpha(opacity=60); /* For IE8 and earlier */
+
+	/* cover the entire window */
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100;
+}
+
+.popupbox{
+    position:fixed;
+    top:-200px;
+    left:30%;
+    right:30%;
+    background-color:#fff;
+    color:#7F7F7F;
+    padding:20px;
+    border:2px solid #ccc;
+    -moz-border-radius: 20px;
+    -webkit-border-radius:20px;
+    -khtml-border-radius:20px;
+    -moz-box-shadow: 0 1px 5px #333;
+    -webkit-box-shadow: 0 1px 5px #333;
+    z-index:101;
+    text-align:center;
+}
+
+#popupclose{
+    float:right;
+    width:26px;
+    height:26px;
+    background:transparent url('../images/cancel.png') repeat top left;
+    margin-top:-30px;
+    margin-right:-30px;
+    cursor:pointer;
+}
+
+.popupbox h2{
+    border-bottom: 1px dashed #7F7F7F;
+    margin:-20px -20px 0px -20px;
+    padding:10px;
+    background-color:#FFDAB9;
+    text-align:center;
+    color:green;
+    -moz-border-radius:20px 20px 0px 0px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -khtml-border-top-left-radius: 20px;
+    -khtml-border-top-right-radius: 20px;
+}
+
+/* ****************************************************************************************************** */
+/* CSS for About Us Page */
+
+.body {
+	margin:0;
+	padding:0;
+}
+
+hr {
+	width:1200px;
+}
+
+#right hr {
+	width:100%;
+}
+
+div#frogimg {
+	float:right;
+}
+div#frogimg img {
+	width:210px;
+	height:660px;
+}
+
+
+#content{
+	margin:0 auto;
+	margin-top:2px;
+	width:1200px;
+	border:solid 1px #000;
+	background:url("../images/bgquiz.png"); /*#FCF8CF; */
+	background-repeat:repeat-x;
+	background-color:#DAFF7F;
+	font-family:"lucida grande",Verdana, Arial, Helvetica, sans-serif;
+	/*padding-left:0px;*/
+	overflow:hidden;
+}
+
+div#atitle h1 {
+	font-size:20pt;
+	font-style:italic;
+	color:#A0522D;
+	padding-left:7px;
+}
+
+div#acontent h4 {
+	font-size: 15pt;
+	color:#383838 ;
+	padding-left:7px;
+}
+	
+div#acontent1 h4 {
+	font-size: 15pt;
+	color:#A0522D;
+	padding-left:7px;
+}
+
+p {
+	font-size:10pt;
+	padding-left:7px;
+}
+	
+/* **************************************************************************************************** */	
+/* CSS for Contact Us Page */
+
+div#treeimg {
+	float:right;
+}
+div#treeimg img {
+	width:290px;
+	height:620px;
+}
+
+
+div#ctitle h1{
+    font-size: 20pt;
+    color:#A0522D;
+	font-style: italic;
+	padding-left:7px;
+  }
+
+div#ctitle h4{
+    font-size: 18pt;
+    font-weight: normal;
+	font-style: italic;
+    color:#228B22;
+    padding-left:7px;
+  }
+
+p {
+	font-size:12pt;
+	padding-left:7px;
+}
+div#ccontent {
+ 	padding-left:7px;
+}
+div#ccontent h4 {
+	font-size:15pt;
+	font-weight:normal;
+	font-weight:Bold;
+	color:#A0522D;
+	padding-left:7px;
+	
+}
+
+#btnsubmit {
+	background:url("../images/submit-first.png");
+	background-repeat:no-repeat;
+	border:none;
+	width:100px;
+	height:40px;
+	cursor:pointer;
+}
+
+#btnsubmit:hover {
+	background:url("../images/submit-hover.png");
+	background-repeat:no-repeat;
+}
+
+/* *************************************************************************************************** 	*/
+/* css for login page */
+
+
+#lcontent{
+	margin:0 auto;
+	margin-top:2px;
+	width:1200px;
+	border:solid 1px #000;
+	background:url("../images/bgquiz.png"); /*#FCF8CF; */
+	font-family:"lucida grande",Verdana, Arial, Helvetica, sans-serif;
+	/*padding-left:3px;*/
+	overflow:hidden;
+}
+div#ltitle h1 {
+	font-size:15pt;
+	color:#A0522D;
+	text-align:center;
+}
+
+div#signing {
+ 	width:73%;
+	/* No need to float this */
+	margin-left:auto;
+	margin-right:auto;
+	
+	
+}
+
+div.inup{
+  margin: 10px;
+  border: 1px solid #7F3300;
+  border-radius:15px;
+  height: 350px; /*auto;*/
+  width: 400px;;
+  float: left;
+  text-align: center;
+  position:relative;
+}
+
+div.insideinup {
+	position:absolute;
+	background-color:#DEB887;
+	border-radius:15px 15px 0px 0px;
+	top:0;
+	right:0;
+	left:0;
+	height: 50px;
+}
+
+div.insideinup h3 {
+	color:brown;
+	font-style:italic;
+	
+}
+
+#btnsignin {
+	background:url("../images/signin.png");
+	background-repeat:no-repeat;
+	border:none;
+	width:100px;
+	height:40px;
+	cursor:pointer;
+}
+
+#btnsignin:hover {
+	background:url("../images/signin-hover.png");
+	background-repeat:no-repeat;
+}
+
+
+
+#btncontinue {
+	background:url("../images/continue.png");
+	background-repeat:no-repeat;
+	border:none;
+	width:100px;
+	height:40px;
+	cursor:pointer;
+}
+
+#btncontinue:hover {
+	background:url("../images/continue-hover.png");
+	background-repeat:no-repeat;
+}
