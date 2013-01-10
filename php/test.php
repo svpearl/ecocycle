@@ -1,5 +1,5 @@
 <?php
-	$to = "sneha.21386@gmail.com";
+	$to = "bar@example.com";
 	$subject = "Test email";
 	$message = "This is a test email from php !!!";
 	$result = mail($to, $subject, $message);
@@ -8,20 +8,20 @@
 
 <!--
 <?php
-	$from = "<sneha2186@gmail.com>";
-	$to = "<karthik.murthy@gmail.com>";
-	$subject = "Hi baby";
-	$body = "I LOVE YOU";
+	$from = "<foo@example.com>";
+	$to = "<bar@example.com>";
+	$subject = "Hi";
+	$body = "This is test mail";
 
 	$osname = php_uname('s');
 	if (preg_match('/^WIN/', $osname)) {	
 		require_once "Mail.php";
-		$to = "<karthik.murthy@gmail.com>";
+		$to = "<foo@example.com>";
 	
 		$host = "ssl://smtp.gmail.com";
 		$port = "465";
-		$username = "sneha2186@gmail.com";
-		$password = "sk212j30";
+		$username = "bar@example.com";
+		$password = "foobar1234";
 	
 		$headers = array('From' => $from, 'To' => $to, 'Subject' => $subject);
 		$smtp = Mail::factory('smtp',array('host' => $host, 'port' => $port, 'auth' => true, 
@@ -39,7 +39,7 @@
 	}
 	else
 	{
-		$to = "karthik.murthy@gmail.com";
+		$to = "foo@example.com";
 		$result = mail($to, $subject, $body);
 		if ($result == true) {
 			echo "Mail was succesfully sent to " . $to;
